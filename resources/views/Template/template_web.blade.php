@@ -97,7 +97,15 @@
         $.get('notifikasi/'+id,function(notifikasi){
           document.getElementById("notifikasi").textContent=notifikasi;
         });
+        
+        //Sangat Tidak Dierekomendasikan XD
+        // setInterval(function(){
+        //   $.get('notifikasi/'+id,function(notifikasi){
+        //     document.getElementById("notifikasi").textContent=notifikasi;
+        //   });
+        // },1000);
       }
+      
     </script>
     @yield('script')
   </body>
