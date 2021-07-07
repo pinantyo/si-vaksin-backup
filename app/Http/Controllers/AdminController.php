@@ -61,7 +61,7 @@ class AdminController extends Controller
     public function indexPendaftaran(){
         $akun=Auth::user();
         $laporan = Registrasi::with(['status'])->get();
-        $status=Status::where('id_status','!=','1');
+        $status=Status::where('id_status','!=','1')->get();
         return view("Admin.laporan.pendaftaran.index", ['laporan' => $laporan,'akun' => $akun, 'list_status' => $status]);
     }
 
