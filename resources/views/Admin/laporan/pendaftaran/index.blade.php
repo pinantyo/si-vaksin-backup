@@ -87,6 +87,9 @@
 		$("#editForm").submit(function(e){
 	  		e.preventDefault();
 			$.ajax({
+				headers: {
+			        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			    },
 				url: "{{route('pendaftaran.edit')}}",
 				type: "POST",
 				data: $(this).serialize(),
