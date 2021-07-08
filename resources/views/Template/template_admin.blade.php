@@ -75,6 +75,11 @@
 		          padding-left: 0;
 		        }
 		    }
+		    @media screen and (max-width: 400){
+		    	th, td, .kontrol-laporan button{
+		    		font-size: 6.5px;
+		    	}
+		    }
 		</style>
 	</head>
 
