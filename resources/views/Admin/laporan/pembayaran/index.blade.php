@@ -56,16 +56,4 @@
 </div>
 @endsection
 @section('script')
-<script>
-	// let lol=document.getElementsByClassName("harga");
-	// let count=0;
-	// $('.harga').each(function(){
-	//   alert(this.text());
-	// });
-	// for(var i=0;i<lol.length;i++){
-	// 	count+=$(lol[i]).val();
-	// 	console.log($(lol[i]).text());
-	// }
-	// console.log(count);
-</script>
 @endsection
