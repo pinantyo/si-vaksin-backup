@@ -100,7 +100,7 @@ class AdminController extends Controller
         $admin=Auth::user()->nama;
         $pembayaran=Pembayaran::find($id);
         if ($request->submit=="payment") {
-            $current_timestamp = Carbon::now()->toDateTimeString();
+            $current_timestamp = Carbon::now()->format('Y-m-d H:i:s');
             $pembayaran->update([
                 'id_pembayaran'=>$pembayaran->id_pembayaran,
                 'id_pendaftaran'=>$pembayaran->id_pendaftaran,
