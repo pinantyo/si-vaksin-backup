@@ -80,6 +80,7 @@
 		    		font-size: 6.5px;
 		    	}
 		    }
+		    
 		    .skeleton {
 		        opacity: 1;
 		        animation: skeleton-loading 1s linear infinite alternate;

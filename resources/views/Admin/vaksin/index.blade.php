@@ -24,7 +24,7 @@
 							<td id="nama-vaksin">{{$vaksin->nama_vaksin}}</td>
 							<td id="img-vaksin">
 								@if($vaksin->img)
-									<img id="imageContent{{$vaksin->id_vaksin}}" class="skeleton" src="{{url('assets/vaksin/img/'.$vaksin->img) }}" width="100" class="img-thumbnail rounded mx-auto d-block">
+									<img id="imageContent{{$vaksin->id_vaksin}}" src="{{url('assets/vaksin/img/'.$vaksin->img) }}" width="100" class="img-thumbnail rounded mx-auto d-block skeleton">
 								@endif
 							</td>
 							<td id="deskripsi-vaksin" class="text-justify">{!!$vaksin->deskripsi!!}</td>
