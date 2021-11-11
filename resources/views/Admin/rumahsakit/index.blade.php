@@ -23,7 +23,7 @@
 						<td id="nama-rs">{{$rs->nama_rs}}</td>
 						<td id="img-rs">
 							@if($rs->img)
-								<img id="imageContent{{$rs->id_rs}}" src="{{ url('assets/rs/img/'. $rs->img) }}" width="100" class="img-thumbnail rounded mx-auto d-block">
+								<img id="imageContent{{$rs->id_rs}}" src="{{ url('assets/rs/img/'. $rs->img) }}" width="100" class="img-thumbnail rounded mx-auto d-block skeleton">
 							@endif
 						</td>
 						<td id="deskripsi">
@@ -85,7 +85,7 @@
 													<span class="text-danger" id="imgError2"></span>
 												</div>
 												<div>
-													<img id="imageUpload2" class="img-thumbnail shadow rounded mx-auto d-block d-none">
+													<img id="imageUpload2" class="img-thumbnail shadow rounded mx-auto d-block d-none skeleton">
 												</div>
 											</div>
 											<div class="modal-footer">									        	
@@ -153,7 +153,7 @@
 
 			</div>
 			<div>
-				<img id="imageUpload" class="img-thumbnail shadow rounded mx-auto d-block d-none">
+				<img id="imageUpload" class="img-thumbnail shadow rounded mx-auto d-block d-none skeleton">
 			</div>
 
 		  	<button type="submit" class="btn btn-primary w-50" name="submit" value="submit">Simpan</button>
@@ -187,7 +187,7 @@
 						$("#table_id tbody").append('<tr id="rid'+response.id_rs+'">'+
 							'<td id="nama-rs">'+response.nama_rs+'</td>'+
 							'<td id="img-rs">'+
-								'@if('+response.img+')<img id="imageContent'+response.id_rs+'" width="100" class="img-thumbnail rounded mx-auto d-block">@endif '+
+								'@if('+response.img+')<img id="imageContent'+response.id_rs+'" width="100" class="img-thumbnail rounded mx-auto d-block skeleton">@endif '+
 							'</td>'+
 							'<td id="deskripsi">'+
 								'<p>'+response.alamat+'</p>'+

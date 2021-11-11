@@ -69,6 +69,20 @@
           text-align: center;
         }
       }
+      .skeleton {
+        opacity: 1;
+        animation: skeleton-loading 1s linear infinite alternate;
+      }
+
+      @keyframes skeleton-loading {
+        0% {
+          background-color: hsl(200, 20%, 70%);
+        }
+
+        100% {
+          background-color: hsl(200, 20%, 95%);
+        }
+      }
     </style>
     @yield('css')
 
@@ -183,6 +197,15 @@
          window.print();
          document.body.innerHTML = originalContents;
       }
+
+      window.addEventListener('load', (event) => {
+       element = document.getElementsByClassName("skeleton");
+       console.log(element.length);
+       for(let i=0; i<element.length;i++){
+          element[i].classList.remove("skeleton");
+       }
+       
+      });
     </script>
     @yield('script')
   </body>

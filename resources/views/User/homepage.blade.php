@@ -94,7 +94,7 @@
         </div>
 
         <div class="col-md-8 col-sm-12 col-lg-6 mx-auto">
-          <img src="{{asset('assets/user/indexuser.png')}}" width="100%" height="100%" class="float-right" alt="">
+          <img class="skeleton" src="{{asset('assets/user/indexuser.png')}}" width="100%" height="100%" class="float-right" alt="">
         </div>
       </div>
     </div>
